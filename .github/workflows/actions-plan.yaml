@@ -12,6 +12,8 @@ jobs:
       with:
         token: ${{ secrets.TFE_TOKEN }}
         workspace: test
+        organization: integration-testing
+        type: plan
         message: |
           Run triggered using tfe-run (commit: ${{ github.SHA }})
       id: tfe-run
